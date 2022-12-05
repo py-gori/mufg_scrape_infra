@@ -1,0 +1,8 @@
+env                       = "prd"
+region                    = "asia-northeast1"
+zone                      = "asia-northeast1-a"
+selenium_chrome_image_sha = "@sha256:2e1f59fb711ba42fb68a6c8ee1820eb955d11e8da7db05c318b175650d5ec572"
+mufg_scrape_image_sha     = "@sha256:cafc5e95fea4d116994a3a2683227632364e323b9e0b6d2fe3e90d0289f4d98e"
+mufg_uid_secret_name      = "mufg_uid"
+mufg_pass_secret_name     = "mufg_pass"
+line_token_secret_name    = "line_token"

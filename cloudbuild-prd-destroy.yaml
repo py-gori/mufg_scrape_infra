@@ -1,0 +1,14 @@
+steps:
+  - id: terraform-init
+    name: hashicorp/terraform:1.3.5
+    args: ["init", "-backend-config=bucket=prd-mufg-scrape-tfstate"]
+    dir: "terraform"
+    env:
+      - "TF_VAR_gcp_project=$PROJECT_ID"
+
+  - id: terraform-destroy
+    name: hashicorp/terraform:1.3.5
+    args: ["destroy", "-var-file=prd.tfvars", "-auto-approve"]
+    dir: "terraform"
+    env:
+      - "TF_VAR_gcp_project=$PROJECT_ID"

@@ -1,0 +1,9 @@
+variable "env" {}
+variable "gcp_project" {}
+variable "region" {}
+variable "zone" {}
+variable "selenium_chrome_image_sha" {}
+variable "mufg_scrape_image_sha" {}
+variable "mufg_uid_secret_name" {}
+variable "mufg_pass_secret_name" {}
+variable "line_token_secret_name" {}
